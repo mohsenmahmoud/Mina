@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14A978E3C02816F9D7152268 /* Pods_Mina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE78418BD5624608F59DDD1E /* Pods_Mina.framework */; };
+		822812EA2779BDC000480AD9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822812E92779BDC000480AD9 /* UIView+Extension.swift */; };
+		822812ED2779DE3700480AD9 /* activationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822812EC2779DE3700480AD9 /* activationCodeViewController.swift */; };
+		822812F02779F96200480AD9 /* loginNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822812EF2779F96200480AD9 /* loginNumber.swift */; };
 		822EA3472778D7A6006C9620 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EA3462778D7A6006C9620 /* AppDelegate.swift */; };
 		822EA3492778D7A6006C9620 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822EA3482778D7A6006C9620 /* SceneDelegate.swift */; };
 		822EA34E2778D7A6006C9620 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822EA34C2778D7A6006C9620 /* Main.storyboard */; };
@@ -16,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		822812E92779BDC000480AD9 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		822812EC2779DE3700480AD9 /* activationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activationCodeViewController.swift; sourceTree = "<group>"; };
+		822812EF2779F96200480AD9 /* loginNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginNumber.swift; sourceTree = "<group>"; };
 		822EA3432778D7A6006C9620 /* Mina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		822EA3462778D7A6006C9620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		822EA3482778D7A6006C9620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		822EA3522778D7A8006C9620 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		822EA3542778D7A8006C9620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		822EA35E27790BB6006C9620 /* loginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginViewController.swift; sourceTree = "<group>"; };
+		8E98C325594BE173737A4A0B /* Pods-Mina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mina.release.xcconfig"; path = "Target Support Files/Pods-Mina/Pods-Mina.release.xcconfig"; sourceTree = "<group>"; };
+		AE78418BD5624608F59DDD1E /* Pods_Mina.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mina.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9316B8A6C46622201367D6A /* Pods-Mina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mina.debug.xcconfig"; path = "Target Support Files/Pods-Mina/Pods-Mina.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,51 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14A978E3C02816F9D7152268 /* Pods_Mina.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4595EED7E4F0B9C4ADC49F41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE78418BD5624608F59DDD1E /* Pods_Mina.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		822812E82779BD8B00480AD9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				822812E92779BDC000480AD9 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		822812EB2779DE0C00480AD9 /* ActivationCode */ = {
+			isa = PBXGroup;
+			children = (
+				822812EC2779DE3700480AD9 /* activationCodeViewController.swift */,
+			);
+			path = ActivationCode;
+			sourceTree = "<group>";
+		};
+		822812EE2779F8E500480AD9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		822EA33A2778D7A6006C9620 = {
 			isa = PBXGroup;
 			children = (
 				822EA3452778D7A6006C9620 /* Mina */,
 				822EA3442778D7A6006C9620 /* Products */,
+				F579745F3CA639D348113FB9 /* Pods */,
+				4595EED7E4F0B9C4ADC49F41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,11 +100,13 @@
 		822EA3452778D7A6006C9620 /* Mina */ = {
 			isa = PBXGroup;
 			children = (
+				822EA3462778D7A6006C9620 /* AppDelegate.swift */,
+				822EA3482778D7A6006C9620 /* SceneDelegate.swift */,
+				822812E82779BD8B00480AD9 /* Extension */,
+				822812EE2779F8E500480AD9 /* Networking */,
 				822EA35C27790B71006C9620 /* Controller */,
 				822EA35B27790B62006C9620 /* Views */,
 				822EA35A27790B32006C9620 /* Model */,
-				822EA3462778D7A6006C9620 /* AppDelegate.swift */,
-				822EA3482778D7A6006C9620 /* SceneDelegate.swift */,
 				822EA34C2778D7A6006C9620 /* Main.storyboard */,
 				822EA34F2778D7A8006C9620 /* Assets.xcassets */,
 				822EA3512778D7A8006C9620 /* LaunchScreen.storyboard */,
@@ -72,6 +118,7 @@
 		822EA35A27790B32006C9620 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				822812EF2779F96200480AD9 /* loginNumber.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -79,6 +126,7 @@
 		822EA35B27790B62006C9620 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				822812EB2779DE0C00480AD9 /* ActivationCode */,
 				822EA35D27790B8A006C9620 /* Login */,
 			);
 			path = Views;
@@ -99,6 +147,15 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		F579745F3CA639D348113FB9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9316B8A6C46622201367D6A /* Pods-Mina.debug.xcconfig */,
+				8E98C325594BE173737A4A0B /* Pods-Mina.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +163,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 822EA3572778D7A8006C9620 /* Build configuration list for PBXNativeTarget "Mina" */;
 			buildPhases = (
+				432869F9DDDCD5E2A75E7F59 /* [CP] Check Pods Manifest.lock */,
 				822EA33F2778D7A6006C9620 /* Sources */,
 				822EA3402778D7A6006C9620 /* Frameworks */,
 				822EA3412778D7A6006C9620 /* Resources */,
+				3EE9D9E89CE4C930D7C02219 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -165,6 +224,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3EE9D9E89CE4C930D7C02219 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mina/Pods-Mina-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Mina/Pods-Mina-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Mina/Pods-Mina-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		432869F9DDDCD5E2A75E7F59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Mina-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		822EA33F2778D7A6006C9620 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -172,6 +273,9 @@
 			files = (
 				822EA3472778D7A6006C9620 /* AppDelegate.swift in Sources */,
 				822EA3492778D7A6006C9620 /* SceneDelegate.swift in Sources */,
+				822812F02779F96200480AD9 /* loginNumber.swift in Sources */,
+				822812ED2779DE3700480AD9 /* activationCodeViewController.swift in Sources */,
+				822812EA2779BDC000480AD9 /* UIView+Extension.swift in Sources */,
 				822EA35F27790BB6006C9620 /* loginViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +420,7 @@
 		};
 		822EA3582778D7A8006C9620 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9316B8A6C46622201367D6A /* Pods-Mina.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -344,6 +449,7 @@
 		};
 		822EA3592778D7A8006C9620 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E98C325594BE173737A4A0B /* Pods-Mina.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

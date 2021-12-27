@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eQs-pn-k3h">
-                                <rect key="frame" x="52" y="459" width="286" height="97"/>
+                                <rect key="frame" x="52" y="364" width="286" height="97"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="gLV-Fm-Stt">
                                         <rect key="frame" x="0.0" y="0.0" width="286" height="97"/>
@@ -27,7 +27,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="bSQ-NE-c7J">
-                                <rect key="frame" x="-294" y="553.33333333333337" width="554.33333333333337" height="588.00000000000011"/>
+                                <rect key="frame" x="-314.33333333333331" y="474" width="554.33333333333337" height="588"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconScreen" translatesAutoresizingMaskIntoConstraints="NO" id="c5Y-b3-Gox">
                                         <rect key="frame" x="0.0" y="0.0" width="554.33333333333337" height="588"/>
@@ -42,11 +42,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.0" green="0.45882352939999999" blue="0.48627450979999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="bSQ-NE-c7J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="509.33333333333326" id="ANH-Vm-0gh"/>
+                            <constraint firstItem="bSQ-NE-c7J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="430" id="ANH-Vm-0gh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eQs-pn-k3h" secondAttribute="trailing" constant="52" id="H1g-zM-DsO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bSQ-NE-c7J" secondAttribute="trailing" constant="129.66666666666663" id="P4j-sD-99B"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bSQ-NE-c7J" secondAttribute="trailing" constant="150" id="QAe-AC-9e5"/>
                             <constraint firstItem="eQs-pn-k3h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="SFM-it-eAp"/>
-                            <constraint firstItem="eQs-pn-k3h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="415" id="czA-Si-LZB"/>
+                            <constraint firstItem="eQs-pn-k3h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="320" id="czA-Si-LZB"/>
                         </constraints>
                     </view>
                 </viewController>
