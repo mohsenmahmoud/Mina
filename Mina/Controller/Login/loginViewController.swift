@@ -23,6 +23,19 @@ class loginViewController: UIViewController , UITextFieldDelegate  {
         }
      }
     
+   //UItext field delegate
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let allowedCharacter = "1234567890"
+        let allowedCharacterSet = CharacterSet(charactersIn: allowedCharacter)
+        let typedCharacterSet = CharacterSet(charactersIn: string)
+        let type = allowedCharacterSet.isSuperset(of: typedCharacterSet)
+        return type
+    }
+    
+    
+    
+    
+    
     @IBAction func loginButton(_ sender: UIButton) {
         guard  let loginTF = TFLoginNumber.text , !loginTF.isEmpty else{return}
         let param = ["phone" : TFLoginNumber.text! , "device_type" : "12345" , "device_id" : "sssss" , "firebase_token" : "www"]
@@ -37,7 +50,22 @@ class loginViewController: UIViewController , UITextFieldDelegate  {
                 case .success(let data):
                     do{
                         let data = try? JSONDecoder().decode(LoginNumber.self, from: response.data!)
-                        print(data)
+                        if let data = data{
+                            let phone = self.TFLoginNumber.text
+                            
+                            print(data)
+                            print(phone!)
+                                
+                        }else{return}
+                        
+                        let VCUserdata = self.storyboard?.instantiateViewController(withIdentifier: "userVerifyVC") as! activationCodeViewController
+                        VCUserdata.modalPresentationStyle = .fullScreen
+                        VCUserdata.modalTransitionStyle = .flipHorizontal
+                            
+                        VCUserdata.phoneNumber = self.TFLoginNumber.text
+
+                        self.present(VCUserdata, animated: true, completion: nil)
+                        
                     }catch{
                         
                     }

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BestOffersHomeCell" id="gTV-IL-0wX" customClass="BestOffersHomeCell" customModule="Mina" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="148"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="270" height="148"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBZ-8N-uGb">
+                        <rect key="frame" x="0.0" y="0.0" width="270" height="148"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="a9L-Kf-lq2">
+                                <rect key="frame" x="0.0" y="0.0" width="270" height="150"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="a9L-Kf-lq2" secondAttribute="bottom" constant="-2" id="Da6-gC-fes"/>
+                            <constraint firstAttribute="trailing" secondItem="a9L-Kf-lq2" secondAttribute="trailing" id="aPm-2y-jLO"/>
+                            <constraint firstItem="a9L-Kf-lq2" firstAttribute="leading" secondItem="VBZ-8N-uGb" secondAttribute="leading" id="hCb-e4-jqF"/>
+                            <constraint firstItem="a9L-Kf-lq2" firstAttribute="top" secondItem="VBZ-8N-uGb" secondAttribute="top" id="jqJ-cm-2nK"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="VBZ-8N-uGb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FK5-pt-ama"/>
+                <constraint firstAttribute="trailing" secondItem="VBZ-8N-uGb" secondAttribute="trailing" id="lIE-oH-dJ4"/>
+                <constraint firstAttribute="bottom" secondItem="VBZ-8N-uGb" secondAttribute="bottom" id="qWh-mW-oR4"/>
+                <constraint firstItem="VBZ-8N-uGb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="yoR-Hh-gSL"/>
+            </constraints>
+            <size key="customSize" width="270" height="120"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="BestOffersImageHomeCell" destination="a9L-Kf-lq2" id="U14-LL-k8K"/>
+            </connections>
+            <point key="canvasLocation" x="297.10144927536237" y="123.88392857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
