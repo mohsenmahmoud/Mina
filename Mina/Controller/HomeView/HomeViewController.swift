@@ -4,10 +4,11 @@
 //
 //  Created by mohsen on 29/12/2021.
 //
-
+import SideMenu
 import UIKit
-
+ 
 class HomeViewController: UIViewController {
+    var menu : SideMenuNavigationController?
 
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var bestOfferCollectionView: UICollectionView!
@@ -60,6 +61,13 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
         startTimer()
         pageControl.numberOfPages = offerHome.count
+        
+        
+        
+        
+        //side menu
+        menu = SideMenuNavigationController(rootViewController: sideMinuViewController())
+
 
     }
     
@@ -81,7 +89,17 @@ class HomeViewController: UIViewController {
 
 
     
- 
+    @IBAction func siedMenu(_ sender: UIBarButtonItem) {
+       // let menu = SideMenuNavigationController(rootViewController: sideMinuViewController())
+        present(menu!, animated: true, completion: nil)
+        
+        
+    }
+    
 
 }
+
+
+
+
 

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		14A978E3C02816F9D7152268 /* Pods_Mina.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE78418BD5624608F59DDD1E /* Pods_Mina.framework */; };
+		8227FCAE277FAE290092E646 /* sideMinuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227FCAD277FAE290092E646 /* sideMinuViewController.swift */; };
+		8227FCB0278085390092E646 /* dropDownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8227FCAF278085390092E646 /* dropDownViewController.swift */; };
 		822812EA2779BDC000480AD9 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822812E92779BDC000480AD9 /* UIView+Extension.swift */; };
 		822812ED2779DE3700480AD9 /* activationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822812EC2779DE3700480AD9 /* activationCodeViewController.swift */; };
 		822812F02779F96200480AD9 /* loginNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822812EF2779F96200480AD9 /* loginNumber.swift */; };
@@ -34,6 +36,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8227FCAD277FAE290092E646 /* sideMinuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sideMinuViewController.swift; sourceTree = "<group>"; };
+		8227FCAF278085390092E646 /* dropDownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dropDownViewController.swift; sourceTree = "<group>"; };
 		822812E92779BDC000480AD9 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		822812EC2779DE3700480AD9 /* activationCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = activationCodeViewController.swift; sourceTree = "<group>"; };
 		822812EF2779F96200480AD9 /* loginNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loginNumber.swift; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 				82722AA0277C6A9200F375FE /* HomeViewController.swift */,
 				82722AAD277CB2EB00F375FE /* timerBestOfferClass.swift */,
 				82722AAF277CB37400F375FE /* collectionHome+extention.swift */,
+				8227FCAD277FAE290092E646 /* sideMinuViewController.swift */,
+				8227FCAF278085390092E646 /* dropDownViewController.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -369,6 +375,7 @@
 				822EA3472778D7A6006C9620 /* AppDelegate.swift in Sources */,
 				822EA3492778D7A6006C9620 /* SceneDelegate.swift in Sources */,
 				82722AAC277CA7FA00F375FE /* ratingHomeModel.swift in Sources */,
+				8227FCB0278085390092E646 /* dropDownViewController.swift in Sources */,
 				82722AAE277CB2EB00F375FE /* timerBestOfferClass.swift in Sources */,
 				822812F02779F96200480AD9 /* loginNumber.swift in Sources */,
 				82722AB0277CB37400F375FE /* collectionHome+extention.swift in Sources */,
@@ -376,6 +383,7 @@
 				82394242277DCDF400E13352 /* LatestProductsUICollectionViewCell.swift in Sources */,
 				822812ED2779DE3700480AD9 /* activationCodeViewController.swift in Sources */,
 				82722AA1277C6A9200F375FE /* HomeViewController.swift in Sources */,
+				8227FCAE277FAE290092E646 /* sideMinuViewController.swift in Sources */,
 				822812EA2779BDC000480AD9 /* UIView+Extension.swift in Sources */,
 				82722AA3277C6BB100F375FE /* BestOfferHomeModel.swift in Sources */,
 				82394245277DD65100E13352 /* LatestProductsModel.swift in Sources */,

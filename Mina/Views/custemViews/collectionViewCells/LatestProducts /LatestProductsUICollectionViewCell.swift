@@ -23,11 +23,11 @@ class LatestProductsUICollectionViewCell: UICollectionViewCell {
     
     
     func setup(LatestProducts : LatestProductsModel){
-        productImage.kf.setImage(with:LatestProducts.productImage?.asUrl)
+       // productImage.kf.setImage(with:LatestProducts.productImage?.asUrl)
        // userPersoneImage.kf.setImage(with:LatestProducts.ImageUser?.asUrl)
-        PublicationTimeLBL.text = LatestProducts.PublicationTime
-        titleProductLBL.text = LatestProducts.title
-       // nameUserLBL.text = LatestProducts.nameUser
+     // PublicationTimeLBL.text = LatestProducts.PublicationTime
+      // titleProductLBL.text = LatestProducts.title
+      //  nameUserLBL.text = LatestProducts.nameUser
         //priceProductLBL.text = LatestProducts.priceProduct as! String
      }
      

@@ -130,6 +130,28 @@ class activationCodeViewController: UIViewController , UITextFieldDelegate {
         print("send again")
         timerStart()
 
+        
+        //reguest
+        let param = ["phone" : phoneNumber]
+        let header : [String : String] = ["Accept-Language" : "ar"]
+            let url = "https://ewanapp.com/mena/api/clients/resendCode"
+        AF.request(url, method: .post, parameters: param, headers: header as? HTTPHeaders)
+            .response { response in
+                switch response.result{
+                case .failure(let error):
+                    print(error)
+                case .success(let data):
+                    do{
+                        let data = try JSONDecoder().decode(VerifyCode.self, from: response.data!)
+                        print(data)
+                    }catch{
+                    }
+                }
+            }
+        
+        
+        
+        
     }
 
     
