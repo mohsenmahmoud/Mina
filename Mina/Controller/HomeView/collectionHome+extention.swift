@@ -60,7 +60,7 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
             return CGSize(width: 100, height: ratingsCollectionView.frame.height)
             
         case latestProductCollectionView:
-            return CGSize(width: 170, height:250)
+            return CGSize(width: 200, height:280)
         default :
             return CGSize(width: 100, height: ratingsCollectionView.frame.height)
 

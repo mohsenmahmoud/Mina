@@ -1,15 +1,15 @@
 //
-//  LatestProductsUICollectionViewCell.swift
+//  newItemsVCCell.swift
 //  Mina
 //
-//  Created by mohsen on 30/12/2021.
+//  Created by mohsen on 02/01/2022.
 //
 
 import UIKit
 
-class LatestProductsUICollectionViewCell: UICollectionViewCell {
- 
-    static let identifire = String(describing: LatestProductsUICollectionViewCell.self)
+class newItemsVCCell: UICollectionViewCell {
+
+    static let identifire = String(describing: newItemsVCCell.self)
 
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var PublicationTimeLBL: UILabel!
@@ -22,13 +22,13 @@ class LatestProductsUICollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var locationUserImage: UIImageView!
     
     
-    func setup(LatestProducts : LatestProductsModel){
-        productImage.kf.setImage(with:LatestProducts.productImage?.asUrl)
+    func setup(newItems : newItemsModel){
+        productImage.kf.setImage(with:newItems.productImage?.asUrl)
        // userPersoneImage.kf.setImage(with:LatestProducts.ImageUser?.asUrl)
-      PublicationTimeLBL.text = LatestProducts.PublicationTime
-      titleProductLBL.text = LatestProducts.title
-      nameUserLBL.text = LatestProducts.nameUser
+      PublicationTimeLBL.text = newItems.PublicationTime
+      titleProductLBL.text = newItems.title
+      nameUserLBL.text = newItems.nameUser
         //priceProductLBL.text = LatestProducts.priceProduct as! String
      }
-     
+
 }
