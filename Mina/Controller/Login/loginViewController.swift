@@ -18,6 +18,7 @@ class loginViewController: UIViewController , UITextFieldDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         TFLoginNumber.delegate = self
+        TFLoginNumber.keyboardType = .asciiCapableNumberPad
         AF.request("https://ewanapp.com/mena/api/clients/login").response{response in
             debugPrint(response)
         }

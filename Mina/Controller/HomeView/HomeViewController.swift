@@ -63,13 +63,25 @@ class HomeViewController: UIViewController {
         pageControl.numberOfPages = offerHome.count
         
         
-        
+        //getData
+        getData()
         
         //side menu
         menu = SideMenuNavigationController(rootViewController: sideMinuViewController())
 
 
     }
+    
+//    func openSideMenu () {
+//          if let sideMenuVc = storyboard?.instantiateViewController(identifier: "sideMinuViewController") as? sideMinuViewController {
+//         let menuNavgtion = sideMinuViewController(rootViewController: sideMenuVc)
+//         menuNavgtion.navigationBar.isHidden = true
+//         menuNavgtion.presentationStyle.backgroundColor = .clear
+//         menuNavgtion.menuWidth = (UIScreen.main.bounds.width - 60)
+//                 SideMenuManager.default.rightMenuNavigationController = menuNavgtion
+//                 present(SideMenuManager.default.rightMenuNavigationController!, animated: true, completion: nil)
+//         }
+//         }
     
     //registerCell
     
@@ -92,7 +104,7 @@ class HomeViewController: UIViewController {
     @IBAction func siedMenu(_ sender: UIBarButtonItem) {
        // let menu = SideMenuNavigationController(rootViewController: sideMinuViewController())
         present(menu!, animated: true, completion: nil)
-        
+       //openSideMenu()
         
     }
     

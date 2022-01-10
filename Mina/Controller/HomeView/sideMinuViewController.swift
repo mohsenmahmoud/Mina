@@ -6,9 +6,12 @@
 //
 
 import UIKit
+import SideMenu
 
-class sideMinuViewController: UIViewController {
+class sideMinuViewController: UIViewController , UITableViewDelegate , UITableViewDataSource {
 
+    
+    var itme = ["home" , "profile"]
 
     
     
@@ -17,20 +20,24 @@ class sideMinuViewController: UIViewController {
        // tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
 
      }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return itme.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = itme[indexPath.row]
+        
+        return cell
+    }
+    
+    
 }
-//
-//extension sideMinuViewController : UITableViewDataSource , UITableViewDelegate{
-//    var itme = ["home" , "profile"]
-//
-//    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return itme.count
-//    }
-//    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-//
-//        cell.textLabel?.text = itme[indexPath.row]
-//        return cell
-//    }
-//}
 
+
+
+
+
+
+ 
  

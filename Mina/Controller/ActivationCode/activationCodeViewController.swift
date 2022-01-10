@@ -37,6 +37,7 @@ class activationCodeViewController: UIViewController , UITextFieldDelegate {
         let number2 = activeCodeNumber2.text
         let number3 = activeCodeNumber3.text
         let number4 = activeCodeNumber4.text
+        
         if number1!.isEmpty{
             print("not value")
         }else{
@@ -72,6 +73,7 @@ class activationCodeViewController: UIViewController , UITextFieldDelegate {
     
     
     @IBAction func sendActiveCodeDone(_ sender: UIButton) {
+        //post activeCode
         chickNumber()
         let numbers = activeCodeNumber1.text! + activeCodeNumber2.text! + activeCodeNumber3.text! + activeCodeNumber4.text!
         print(numbers)
@@ -86,14 +88,49 @@ class activationCodeViewController: UIViewController , UITextFieldDelegate {
                     print(error)
                 case .success(let data):
                     do{
+                        
                         let data = try JSONDecoder().decode(VerifyCode.self, from: response.data!)
-                        print(data)
+                       // print(data)
+                        print("api --------------\(String(describing: data.apiToken))")
+                        Helper.saveToken(token: data.apiToken ?? "")
+                        if Helper.getToken() != nil {
+                            let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController")
+                            self.present(vc!, animated: true, completion: nil)
+//                            // Home
+//                           // prepare(for: "goHome", sender: nil)
+//                            let VCUserdata = self.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
+//                            VCUserdata.modalPresentationStyle = .fullScreen
+//                            VCUserdata.modalTransitionStyle = .flipHorizontal
+//                            self.present(VCUserdata, animated: true, completion: nil)
+
+
+                        }else{
+                            print("-------------:::::::::")
+//                            // Auth
+//                           // self.dismiss(animated: true, completion: nil)
+//
+//                           // self.view.window!.rootViewController?.dismiss(animated: false)
+//
+                         }
+                          
+                
                     }catch{
+                        
                     }
                 }
             }
+        
+        
+        
+        //login
+        
+        
+        
     }
     
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return false
+    }
     
     //timer
     private var timer: Timer?
@@ -142,8 +179,9 @@ class activationCodeViewController: UIViewController , UITextFieldDelegate {
                     print(error)
                 case .success(let data):
                     do{
-                        let data = try JSONDecoder().decode(VerifyCode.self, from: response.data!)
-                        print(data)
+                        let data = try? JSONDecoder().decode(VerifyCode.self, from: response.data!)
+                        data?.status
+                      
                     }catch{
                     }
                 }

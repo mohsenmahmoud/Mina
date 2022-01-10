@@ -7,8 +7,8 @@
 
 import Foundation
 import UIKit
+import Alamofire
 extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
-    
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 
@@ -66,6 +66,37 @@ extension HomeViewController : UICollectionViewDelegate , UICollectionViewDataSo
 
             
         }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    func getData(){
+ 
+       let url = "https://ewanapp.com/mena/api/clients/home"
+        let auth = "GpyXhKjz7fjmVZYuyq51HebgslBEQDExP6HkEEDw46LdlgbJ9xnEsmaGitpo"
+        let header : [String : String] = ["Accept-Language" : "en" , "Authorization" :auth]
+        AF.request(url , headers: header as? HTTPHeaders).response{ response in
+                switch response.result{
+                case .failure(let error):
+                    print(error)
+                case .success(let data):
+                    do{
+                        
+                        //let data = try JSONDecoder().decode(HomeModel.self, from: response.data!)
+                       // print(data)
+                        print("api --------------\(data)")
+                        
+                    }catch{
+                        print("nnnnnnnnn")
+                    }
+                }
+            }
     }
     
 
